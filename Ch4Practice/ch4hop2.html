@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>KayakDoorCounty.net</title>
+<meta charset="utf-8">
+<title>KayakDoorCounty.net</title>
 
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-    }
+<style>
 
-    #bar {
-      background-color: #152420;
-      padding: 10px;
-    }
+/* ===== Navigation Bar (from earlier HOPs) ===== */
+#bar {
+  background-color: #152420;
+  padding: 10px;
+}
 
-    img {
-      border: none;
-    }
+img {
+  border: none;
+}
 
-    main {
-      background-image: url(images/heroback.jpg);
-      background-repeat: no-repeat;
-      background-position: right top;
-      min-height: 350px;
-      padding: 20px;
-    }
-  </style>
+/* ===== HOP 4.8 + 4.9: Multiple Background Images ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  background:
+    url(images/kayakdc.gif) no-repeat left bottom,
+    url(images/tours.gif) repeat-y left top,
+    url(images/heroback.jpg) no-repeat fixed;
+
+  background-size: auto, auto, cover;
+}
+
+/* ===== HOP 4.7: Background image on main ===== */
+main {
+  background-image: url(images/heroback.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  min-height: 350px;
+  padding: 20px;
+
+  /* keeps text readable over body background */
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+</style>
 </head>
 
 <body>
@@ -45,20 +60,19 @@
   </a>
 
   <a href="reservations.html">
-    <img src="images/reservations.gif" alt="Reservations" width="190" height="35">
+    <img src="images/reservations.gif" alt="Reservations" width="90" height="35">
   </a>
 
   <a href="contact.html">
-    <img src="images/contact.gif" alt="Contact" width="130" height="35">
+    <img src="images/contact.gif" alt="Contact" width="90" height="35">
   </a>
 </nav>
 
 <main>
-  <h2>Your next adventure is only a paddle away...</h2>
+  <h2>Your next adventure is only a paddle away…</h2>
 
   <p>
-    Take a guided kayak tour while you <br>
-    explore the shoreline of scenic Door County.
+    Take a guided kayak tour while you explore the shoreline of scenic Door County.
   </p>
 
   <h3>Featured tours this week:</h3>
@@ -76,7 +90,6 @@
     <a href="reservations.html">Reservations</a> |
     <a href="contact.html">Contact</a>
   </p>
-
   <p>&copy; 2026 KayakDoorCounty.net</p>
 </footer>
 
